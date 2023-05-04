@@ -5,9 +5,5 @@ import Paragraph from '@/components/ui/Paragraph';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
-    return (
-        <main className='bg-red-500'>
-            <Paragraph>Text</Paragraph>
-        </main>
-    );
+    return <main className=''></main>;
 }
