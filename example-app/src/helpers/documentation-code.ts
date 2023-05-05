@@ -1,10 +1,13 @@
 export const nodejs = `const axios = require("axios");
 const options = {
     method: 'POST',
-    url: 'https://similarityapi.com/api/v1/similarity',
+    url: 'http://localhost:3000.com/api/v1/generator',
     params: {
-      text1: 'First text',
-      text2: 'Second text'
+      element: 'div',
+      name: 'StyledButton',
+      color: 'blue',
+      padding: '16px',
+      margin: '16px',
     },
     headers: {
       'Authorization': 'YOUR_API_KEY',
@@ -18,18 +21,24 @@ axios.request(options).then(function (response) {
 });`
 
 export const python = `import requests
-url = 'https://similarityapi.com/api/v1/similarity'
+url = 'https://localhost:3000/api/v1/generator'
 api_key = 'YOUR_API_KEY'
-text1 = 'First text'
-text2 = 'Second text'
+element = 'div'
+name = 'StyledButton'
+color = 'blue'
+padding = '16px'
+margin = '16px'
 
 headers = {
     'Authorization': api_key
 }
 
 payload = {
-    'text1': text1,
-    'text2': text2
+  'element': element,
+  'name': name,
+  'color': color,
+  'padding': padding,
+  'margin': margin,
 }
 
 response = requests.post(url, headers=headers, json=payload)

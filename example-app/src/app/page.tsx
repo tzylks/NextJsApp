@@ -8,7 +8,7 @@ import 'simplebar-react/dist/simplebar.min.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Similarity API | Home',
+    title: 'Stitches Generator API | Home',
     description: 'Free & open-source text similarity API',
 };
 
@@ -21,12 +21,12 @@ export default function Home() {
                         size='lg'
                         className='three-d text-black dark:text-light-gold'
                     >
-                        Easily determine <br /> text similarity.
+                        Generate stitches <br /> with ease.
                     </LargeHeading>
 
                     <Paragraph className='max-w-xl lg:text-left'>
-                        With the Text Similarity API, you can easily determine
-                        the similarity between two pieces of text with a free{' '}
+                        Using Stitches Generator API will allow you to create
+                        simple stitches based components with no hassle{' '}
                         <Link
                             href='/login'
                             className='underline underline-offset-2 text-black dark:text-light-gold'
@@ -36,15 +36,16 @@ export default function Home() {
                         .
                     </Paragraph>
 
-                    <div className='relative w-full max-w-xl lg:max-w-3xl lg:left-1/2 aspect-square lg:absolute'>
+                    <div className='mt-10 ml-10 sm:m-0 relative w-full max-w-xl lg:max-w-2xl lg:left-1/2 aspect-square lg:absolute'>
                         <Image
                             priority
-                            className='img-shadow '
+                            className='img-shadow'
                             quality={100}
                             style={{ objectFit: 'contain' }}
-                            fill
-                            src='/typewriter.png'
-                            alt='typewriter'
+                            src='/lightbulb.png'
+                            alt='lightbulb'
+                            width={600}
+                            height={600}
                         />
                     </div>
                 </div>

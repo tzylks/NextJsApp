@@ -16,7 +16,7 @@ const NavBar = async () => {
                     href='/'
                     className={buttonVariants({ variant: 'link' })}
                 >
-                    Text Similarity v1.0
+                    Stitches Generator v1.0
                 </Link>
 
                 <div className='md:hidden'>
